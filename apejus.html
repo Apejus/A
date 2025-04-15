@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apejus</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    header {
+      background-image: url('image.png');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      position: relative;
+    }
+
+    header .overlay {
+      background-color: rgba(255, 255, 255, 0.6);
+      height: 100%;
+      width: 100%;
+    }
+
+   .logo img {
+      height: 70px;
+      width: auto;
+      margin-top: -40px;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      padding-left: 0;
+      margin-top: -35px;
+    }
+
+    .navbar a {
+      font-size: 1rem;
+      color: #333;
+    }
+
+    .header-txt {
+      text-align: center;
+      padding-bottom: 5rem;
+    }
+
+    section {
+      padding: 3rem 0;
+      border-top: 1px solid #ccc;
+    }
+
+    h2 {
+      color: #007acc;
+      margin-bottom: 1rem;
+
+    }
+
+    .plans-1, .blog-1, .jurista-card {
+      background-color: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .plans-1 span {
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    .footer {
+      background-color: #eee;
+      color: #333;
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+    .footer h3 {
+      color: #007acc;
+    }
+
+    .jurista-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .slider-wrapper {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slider {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      width: 100%;
+    }
+
+    .slider > * {
+      flex: 0 0 100%;
+      box-sizing: border-box;
+    }
+
+    .slider-buttons {
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      transform: translateY(-50%);
+    }
+
+    .slider-buttons button {
+      background: #007acc;
+      border: none;
+      color: white;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header" style="background-image: url('file:///C:/Users/drika/Downloads/conferencia_transparente_30.png'); background-size: cover; background-position: center; height: 50vh; position: relative;">
+    <div class="overlay">
+      <div class="container" style="height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+        <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 1.5rem;">
+          <div class="logo">
+            <img src="C:\Users\drika\Downloads\LOGO_APEJUS_transparente.png">
+          </div>
+          <nav class="navbar">
+            <ul>
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#about">Nosotros</a></li>
+              <li><a href="#news">Noticias</a></li>
+              <li><a href="#juristas">Juristas</a></li>
+              <li><a href="#conferences">Conferencias</a></li>
+              <li><a href="#contact">Contacto</a></li>
+            </ul>
+          </nav>
+        </div>
+         <div style="flex: 1; display: flex; justify-content: center; align-items: center;">
+        <p style="font-size: 1.5rem; color: #333; text-align: center;">Academia del Pensamiento Jurídico Sudamericano.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <h2 style="text-align: center;">Sobre Nosotros</h2>
+      <p style="font-size: 1rem; color: #333; text-align: center;"> Somos un espacio dedicado al desarrollo del pensamiento jurídico en Sudamérica. Únete a nuestra comunidad.</p>
+    </div>
+  </section>
+
+  <section id="juristas">
+    <div class="container" >
+      <h2>Juristas</h2>
+      <div class="slider-wrapper">
+        <div class="slider" id="juristasSlider">
+          <div class="jurista-card"><img src="img/jurista1.jpg" alt="Jurista 1"><h4>Lic. Andrea Ramírez</h4><p>Especialista en derecho deportivo y entrenadora certificada.</p></div>
+          <div class="jurista-card"><img src="img/jurista2.jpg" alt="Jurista 2"><h4>Dr. Carlos Méndez</h4><p>Abogado deportivo con 15 años de experiencia legal y atlética.</p></div>
+          <div class="jurista-card"><img src="img/jurista3.jpg" alt="Jurista 3"><h4>Dra. Laura Suárez</h4><p>Consultora legal en el ámbito de la salud y el fitness.</p></div>
+          <div class="jurista-card"><img src="img/jurista4.jpg" alt="Jurista 4"><h4>Dr. Juan Pérez</h4><p>Derecho penal aplicado al deporte.</p></div>
+          <div class="jurista-card"><img src="img/jurista5.jpg" alt="Jurista 5"><h4>Dra. Elena López</h4><p>Jurista enfocada en salud pública y bienestar.</p></div>
+        </div>
+        <div class="slider-buttons">
+          <button onclick="moveSliderGeneric('juristasSlider', -1)">&#8592;</button>
+          <button onclick="moveSliderGeneric('juristasSlider', 1)">&#8594;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="news">
+    <div class="container">
+      <h2>Noticias</h2>
+      <div class="slider-wrapper">
+        <div class="slider" id="newsSlider">
+          <div class="plans-1"><h3><a href="https://www.bbc.com/mundo" target="_blank">BBC Mundo</a></h3><p>Últimas noticias internacionales en español.</p> <p class="fecha-noticia">Emitido: 01/04/2025</p> </div>
+          <div class="plans-1"><h3><a href="https://elpais.com" target="_blank">El País</a></h3><p>Noticias, reportajes y actualidad global.</p> <p class="fecha-noticia">Emitido: 01/04/2025</p></div>
+          <div class="plans-1"><h3><a href="https://www.cnn.com/espanol" target="_blank">CNN en Español</a></h3><p>Cobertura en tiempo real de eventos globales.</p> <p class="fecha-noticia">Emitido: 01/04/2025</p> </div>
+        </div>
+        <div class="slider-buttons">
+          <button onclick="moveSliderGeneric('newsSlider', -1)">&#8592;</button>
+          <button onclick="moveSliderGeneric('newsSlider', 1)">&#8594;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="conferencias">
+    <div class="container">
+      <h2>Conferencias</h2>
+      <div class="slider-wrapper">
+        <div class="slider" id="blogSlider">
+          <div class="blog-1"><h4><a href="https://www.youtube.com/channel/UCXXXXXXX" target="_blank">5 Consejos para Ganar Músculo</a></h4>
+<p>Descubre cómo aumentar tu masa muscular de forma efectiva.</p> <p class="fecha-noticia">Emitido: 01/04/2025</p> </div>
+          <div class="blog-1"><h4><a href="https://www.youtube.com/channel/UCXXXXXXX" target="_blank"> Nutrición y Entrenamiento</a></h4><p>Lo que comes es clave para lograr tus metas.</p> <p class="fecha-noticia">Emitido: 01/04/2025</p> </div>
+          <div class="blog-1"><a href="https://www.youtube.com/channel/UCXXXXXXX" target="_blank">Entrenamiento en Casa</a></h4><p>Ejercicios que puedes hacer sin salir de casa.</p> <p class="fecha-noticia">Emitido: 01/04/2025</p> </div>
+        </div>
+        <div class="slider-buttons">
+          <button onclick="moveSliderGeneric('blogSlider', -1)">&#8592;</button>
+          <button onclick="moveSliderGeneric('blogSlider', 1)">&#8594;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contáctanos</h2>
+      <p>Conéctate con nosotros en nuestras redes sociales:</p>
+      <ul>
+        <li><a href="https://wa.me/1234567890" target="_blank">WhatsApp</a></li>
+        <li><a href="https://www.facebook.com/p/Estudio-Jur%C3%ADdico-Vidal%C3%B3n-Asociados-100057430270944/" target="_blank">Facebook</a></li>
+        <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <script>
+    const slideStates = {};
+
+    function moveSliderGeneric(id, direction) {
+      const slider = document.getElementById(id);
+      const items = slider.children.length;
+      if (!slideStates[id]) slideStates[id] = 0;
+      slideStates[id] += direction;
+
+      if (slideStates[id] < 0) slideStates[id] = items - 1;
+      if (slideStates[id] >= items) slideStates[id] = 0;
+
+      const offset = -slideStates[id] * 100;
+      slider.style.transform = `translateX(${offset}%)`;
+    }
+  </script>
+  <section style="width: 100%; margin: 0; padding: 0;"> </section>
+
+  <footer class="footer">
+    <div class="container">
+      <h3>APEJUS</h3>
+      	<p>© 2025 Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
